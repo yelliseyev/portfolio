@@ -1,0 +1,158 @@
+// out: ../css/style.css, compress: true
+
+@gray: rgba(255,255,255,.7);
+@black: #212529;
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.logo {
+  color: @gray;
+  font-weight: bold;
+  font-size: 20px;
+}
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 30px;
+  box-sizing: border-box;
+  z-index: 100;
+  transition: background-color .2s ease;
+  &__list {
+    display: flex;
+  }
+  &__link {
+    color: @gray;
+    font-weight: bold;
+    padding-left: 30px;
+  }
+  &.floating {
+    background: #fff;
+    .nav {
+      &__link {
+        color: @black;
+      }
+    }
+    .logo {
+      color: @black;
+    }
+  }
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background: #f4623a;
+  border: none;
+  margin: 25px auto;
+}
+
+.header {
+  height: 100vh;
+  background: linear-gradient(to bottom,rgba(92,77,66,.8) 0,rgba(92,77,66,.8) 100%),url(../img/bg-masthead.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__title {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 80%;
+    line-height: 45px;
+  }
+  &__desc {
+    color: @gray;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  &__button {
+    color: #fff;
+    background-color: #f4623a;
+    border-radius: 25px;
+    padding: 18px 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+  }
+}
+.portfolio {
+  padding-top: 40px;
+  &__title {
+    font-size: 32px;
+    padding: 20px 0;
+    color: @black;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  &__item {
+    width: 33.33%;
+    position: relative;
+    &:hover {
+      .portfolio__info {
+        display: flex;
+        transition: opacity .25s ease;
+        opacity: 1;
+      }
+    }
+  }
+  &__link {
+
+  }
+  &__image {
+    width: 100%;
+    vertical-align: middle;
+  }
+  &__info {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(244,98,58,.9);
+    pointer-events: none;
+    opacity: 0;
+  }
+  &__category {
+    text-transform: uppercase;
+    color: @gray;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__name {
+    font-family: 'Merriweather';
+    font-size: 19px;
+    color: #fff;
+  }
+
+  &.insta {
+    .portfolio {
+      &__item {
+        width: 25%;
+      }
+    }
+  }
+}
