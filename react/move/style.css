@@ -1,0 +1,41 @@
+body {
+  background: #492540;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  text-align: center;
+}
+.field {
+    width: 500px;
+    height: 500px;
+    margin: 25px auto;
+    background: rgb(25, 25, 25);
+    border: 15px solid rgb(246, 234, 140);
+    border-radius: 10px;
+    position: relative;
+}
+.react {
+  background: url(https://s3.amazonaws.com/media-p.slid.es/uploads/jhabdas/images/969312/react-logo-1000-transparent.png) center no-repeat / contain;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+}
+.control-speed {
+  text-align: center;
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 3px;
+  outline: none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: rgb(246, 234, 140);
+  border-radius: 100%;
+  cursor: pointer;
+}

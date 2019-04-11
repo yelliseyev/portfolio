@@ -2,19 +2,21 @@
 
 @gray: rgba(255,255,255,.7);
 @black: #212529;
+@orange: #f4623a;
 
 body {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 a {
   text-decoration: none;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .logo {
   color: @gray;
   font-weight: bold;
   font-size: 20px;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 .nav {
   position: fixed;
@@ -32,12 +34,19 @@ a {
     color: @gray;
     font-weight: bold;
     padding-left: 30px;
+    &:hover {
+      color: #fff;
+    }
   }
   &.floating {
     background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
     .nav {
       &__link {
         color: @black;
+        &:hover {
+          color: @orange;
+        }
       }
     }
     .logo {
@@ -68,7 +77,7 @@ a {
   &__title {
     font-size: 40px;
     font-weight: bold;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     color: #fff;
     max-width: 80%;
     line-height: 45px;
@@ -77,6 +86,7 @@ a {
     color: @gray;
     font-size: 20px;
     margin-bottom: 20px;
+    line-height: 30px;
   }
   &__button {
     color: #fff;
@@ -156,3 +166,18 @@ a {
     }
   }
 }
+
+.footer {
+  background: #fff;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &__copy {
+    color: @black;
+    font-family: 'Merriweather';
+  }
+}
+
+@import "media.less";

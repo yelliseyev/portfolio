@@ -1,0 +1,42 @@
+// main: style.less
+
+@media only screen and (max-width: 959px) {
+  .header {
+    padding: 0 40px;
+    &__title {
+      font-size: 28px;
+    }
+  }
+  .footer {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+  .header {
+    padding: 0 20px;
+  }
+  .portfolio {
+    &__list {
+      flex-direction: column;
+    }
+    &__item {
+      width: 100%;
+      // margin: 15px 0;
+      // border-top: 20px solid @orange;
+      // border-bottom: 2px solid @orange;
+    }
+    &.insta {
+      display: none;
+      .portfolio__item {
+        width: 100%;
+      }
+    }
+  }
+  .footer__copy {
+    font-size: 14px;
+  }
+}

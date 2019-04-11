@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
@@ -17,20 +18,22 @@
   <nav class="nav">
     <a href="#" class="logo">Sergei Yeliseyev</a>
     <ul class="nav__list">
-      <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+      <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+      <li class="nav__item"><a href="#react" class="nav__link">React Pet Projects</a></li>
+      <li class="nav__item"><a href="#photos" class="nav__link">Photos</a></li>
     </ul>
   </nav>
 
   <header class="header">
-    <h1 class="header__title">YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
+    <h1 class="header__title">Hi! My name is Sergei. Nice to meet you.</h1>
     <hr class="divider">
-    <p class="header__desc">Here you can see my portfolio</p>
-    <button type="button" class="header__button">Find out more</button>
+    <p class="header__desc">I'm web developer with 2 years of experience<br>
+      Currently looking for React.JS developer job, you can check out my portfolio here</p>
+    <button type="button" class="header__button">Check out my portfolio</button>
   </header>
 
 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
 
     <h2 class="portfolio__title">Latest works</h2>
     <hr class="divider">
@@ -59,7 +62,7 @@
           <img class="portfolio__image" src="img/websites/foodsdelivery.jpg" alt="site" />
         </a>
         <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
+          <span class="portfolio__category">E-commerce</span>
           <h4 class="portfolio__name">Foods Delivery Shop</h4>
         </div>
       </div>
@@ -68,7 +71,7 @@
           <img class="portfolio__image" src="img/websites/andora.jpg" alt="site" />
         </a>
         <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
+          <span class="portfolio__category">E-commerce</span>
           <h4 class="portfolio__name">Andora</h4>
         </div>
       </div>
@@ -77,7 +80,7 @@
           <img class="portfolio__image" src="img/websites/vipdesign.jpg" alt="site" />
         </a>
         <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
+          <span class="portfolio__category">E-commerce</span>
           <h4 class="portfolio__name">Vip Design</h4>
         </div>
       </div>
@@ -86,145 +89,115 @@
           <img class="portfolio__image" src="img/websites/filterlife.jpg" alt="site" />
         </a>
         <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
+          <span class="portfolio__category">E-commerce</span>
           <h4 class="portfolio__name">Filter Life</h4>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="portfolio">
+  <section class="portfolio" id="react">
 
-    <h2 class="portfolio__title">React projects</h2>
+    <h2 class="portfolio__title">React Pet Projects</h2>
     <hr class="divider">
 
     <div class="portfolio__list">
       <div class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__image" src="img/portfolio/thumbnails/1.jpg" alt="site" />
+        <a href="https://codepen.io/thewoodrow/pen/KEbWqV" class="portfolio__link" target="_blank">
+          <img class="portfolio__image" src="img/react/move.jpg" alt="site" />
         </a>
         <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
-          <h4 class="portfolio__name">Project name</h4>
+          <span class="portfolio__category">React project</span>
+          <h4 class="portfolio__name">An Interactive Movement Interface</h4>
         </div>
       </div>
       <div class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__image" src="img/portfolio/thumbnails/2.jpg" alt="site" />
+        <a href="https://codepen.io/thewoodrow/pen/zbORXm" class="portfolio__link" target="_blank">
+          <img class="portfolio__image" src="img/react/chart.jpg" alt="site" />
         </a>
         <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
-          <h4 class="portfolio__name">Project name</h4>
+          <span class="portfolio__category">React project</span>
+          <h4 class="portfolio__name">A Chart Bar</h4>
         </div>
       </div>
       <div class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__image" src="img/portfolio/thumbnails/3.jpg" alt="site" />
+        <a href="https://codepen.io/thewoodrow/pen/xMvLxq" class="portfolio__link" target="_blank">
+          <img class="portfolio__image" src="img/react/todo.jpg" alt="site" />
         </a>
         <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
-          <h4 class="portfolio__name">Project name</h4>
+          <span class="portfolio__category">React project</span>
+          <h4 class="portfolio__name">To-Do App</h4>
         </div>
       </div>
       <div class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__image" src="img/portfolio/thumbnails/4.jpg" alt="site" />
+        <a href="https://codepen.io/thewoodrow/pen/OdeBvp" class="portfolio__link" target="_blank">
+          <img class="portfolio__image" src="img/react/divs.jpg" alt="site" />
         </a>
         <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
-          <h4 class="portfolio__name">Project name</h4>
+          <span class="portfolio__category">React project</span>
+          <h4 class="portfolio__name">Random Div Generation</h4>
         </div>
       </div>
       <div class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__image" src="img/portfolio/thumbnails/5.jpg" alt="site" />
+        <a href="https://codepen.io/thewoodrow/pen/zbbMRb" class="portfolio__link" target="_blank">
+          <img class="portfolio__image" src="img/react/form.jpg" alt="site" />
         </a>
         <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
-          <h4 class="portfolio__name">Project name</h4>
+          <span class="portfolio__category">React project</span>
+          <h4 class="portfolio__name">A basic form</h4>
         </div>
       </div>
       <div class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__image" src="img/portfolio/thumbnails/6.jpg" alt="site" />
+        <a href="https://codepen.io/thewoodrow/full/drBMgd" class="portfolio__link" target="_blank">
+          <img class="portfolio__image" src="img/react/recipe.jpg" alt="site" />
         </a>
         <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
-          <h4 class="portfolio__name">Project name</h4>
+          <span class="portfolio__category">React project</span>
+          <h4 class="portfolio__name">Recipe Box</h4>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="portfolio insta">
+  <section class="portfolio insta" id="photos">
 
     <h2 class="portfolio__title">Instagram photos</h2>
     <hr class="divider">
 
-    <div class="portfolio__list">
-      <div class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__image" src="img/portfolio/thumbnails/1.jpg" alt="site" />
-        </a>
-        <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
-          <h4 class="portfolio__name">Project name</h4>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__image" src="img/portfolio/thumbnails/2.jpg" alt="site" />
-        </a>
-        <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
-          <h4 class="portfolio__name">Project name</h4>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__image" src="img/portfolio/thumbnails/3.jpg" alt="site" />
-        </a>
-        <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
-          <h4 class="portfolio__name">Project name</h4>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__image" src="img/portfolio/thumbnails/4.jpg" alt="site" />
-        </a>
-        <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
-          <h4 class="portfolio__name">Project name</h4>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__image" src="img/portfolio/thumbnails/5.jpg" alt="site" />
-        </a>
-        <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
-          <h4 class="portfolio__name">Project name</h4>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__image" src="img/portfolio/thumbnails/6.jpg" alt="site" />
-        </a>
-        <div class="portfolio__info">
-          <span class="portfolio__category">Category</span>
-          <h4 class="portfolio__name">Project name</h4>
-        </div>
-      </div>
-    </div>
+    <div class="portfolio__list" id="instafeed"></div>
   </section>
+
+    <script src="https://matthewelsom.com/assets/js/libs/instafeed.min.js"></script>
+      <script type="text/javascript">
+          var userFeed = new Instafeed({
+              get: 'user',
+              userId: '1081788500',
+              clientId: '236cff1c82764f689bdd06db71fae0db',
+              accessToken: '1081788500.1677ed0.81d547c7c2f749f494519d56b9995be1 ',
+              resolution: 'standard_resolution',
+              template: '<div class="portfolio__item"><a href="{{link}}" target="_blank" id="{{id}}"  class="portfolio__link"><img src="{{image}}" class="portfolio__image" alt="insta" /></a></div>',
+              sortBy: 'most-recent',
+              limit: 16,
+              links: false
+          });
+          userFeed.run();
+
+
+      </script>
+
+
+
+  <footer class="footer">
+    <span class="footer__copy">There is no copyright. No rights reserved.</span>
+  </footer>
+  <!---Тут не копирайта. Никакие права не защищены.-->
 
 
   <!-- Plugin JavaScript -->
-  <script src="vendors/js/jquery.min.js" charset="utf-8"></script>
+  <script src="vendors/js/jquery.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/scripts.js" charset="utf-8"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 </html>
